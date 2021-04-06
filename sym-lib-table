@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name CmpAmpliAudio)(type Legacy)(uri /Users/arthurnicola/Documents/library/Kicad/TR_LibAmpli_3imacs_2021/CmpAmpliAudio.lib)(options "")(descr ""))
+  (lib (name BE_elec_lib)(type Legacy)(uri "/Users/arthurnicola/Documents/INSA/3A IMACS/Semestre 2/BE electronique/Kicad Routage/BE_elec_lib.lib")(options "")(descr ""))
+)
