@@ -619,7 +619,7 @@ Wire Wire Line
 Wire Wire Line
 	1400 6800 1400 7250
 Wire Wire Line
-	2900 6700 2900 7000
+	3350 6700 3350 7000
 Wire Wire Line
 	1150 6700 1750 6700
 Wire Wire Line
@@ -650,7 +650,7 @@ Wire Wire Line
 	2350 6850 2350 6700
 Connection ~ 2350 6700
 Wire Wire Line
-	2350 6700 2900 6700
+	2350 6700 2800 6700
 Wire Wire Line
 	2350 6600 2350 6700
 Wire Wire Line
@@ -663,12 +663,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0105
 U 1 1 6077D510
-P 2900 7000
-F 0 "#PWR0105" H 2900 6750 50  0001 C CNN
-F 1 "GND" H 2905 6827 50  0000 C CNN
-F 2 "" H 2900 7000 50  0001 C CNN
-F 3 "" H 2900 7000 50  0001 C CNN
-	1    2900 7000
+P 3350 7000
+F 0 "#PWR0105" H 3350 6750 50  0001 C CNN
+F 1 "GND" H 3355 6827 50  0000 C CNN
+F 2 "" H 3350 7000 50  0001 C CNN
+F 3 "" H 3350 7000 50  0001 C CNN
+	1    3350 7000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -958,17 +958,6 @@ Wire Wire Line
 	7100 900  7100 1200
 Connection ~ 5800 900 
 $Comp
-L Diode:1N4148 D1
-U 1 1 60814669
-P 8900 3600
-F 0 "D1" V 8854 3680 50  0000 L CNN
-F 1 "1N4148" V 8945 3680 50  0000 L CNN
-F 2 "CmpAmpliAudio:D_DO-35_SOD27_P10.16mm_Horizontal" H 8900 3425 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 8900 3600 50  0001 C CNN
-	1    8900 3600
-	0    1    1    0   
-$EndComp
-$Comp
 L power:+12V #PWR0109
 U 1 1 60815A10
 P 8900 3300
@@ -1091,10 +1080,6 @@ Wire Wire Line
 	10300 3350 10300 3850
 Connection ~ 10300 3350
 Wire Wire Line
-	8900 3300 8900 3450
-Wire Wire Line
-	8900 3750 8900 3950
-Wire Wire Line
 	8900 3950 9300 3950
 Wire Wire Line
 	9300 3950 9300 3350
@@ -1170,4 +1155,58 @@ Wire Wire Line
 	10650 2650 10750 2650
 Wire Wire Line
 	10750 2650 10750 2850
+Wire Wire Line
+	8900 3750 8900 3950
+Wire Wire Line
+	8900 3300 8900 3450
+$Comp
+L Diode:1N4148 D1
+U 1 1 60814669
+P 8900 3600
+F 0 "D1" V 8854 3680 50  0000 L CNN
+F 1 "1N4148" V 8945 3680 50  0000 L CNN
+F 2 "CmpAmpliAudio:D_DO-35_SOD27_P10.16mm_Horizontal" H 8900 3425 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 8900 3600 50  0001 C CNN
+	1    8900 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:1N4148 D3
+U 1 1 60743B4B
+P 2800 6450
+F 0 "D3" V 2754 6530 50  0000 L CNN
+F 1 "1N4001" V 2845 6530 50  0000 L CNN
+F 2 "CmpAmpliAudio:D_DO-35_SOD27_P10.16mm_Horizontal" H 2800 6275 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 2800 6450 50  0001 C CNN
+	1    2800 6450
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:1N4148 D4
+U 1 1 60746F5E
+P 2800 6950
+F 0 "D4" V 2754 7030 50  0000 L CNN
+F 1 "1N4001" V 2845 7030 50  0000 L CNN
+F 2 "CmpAmpliAudio:D_DO-35_SOD27_P10.16mm_Horizontal" H 2800 6775 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 2800 6950 50  0001 C CNN
+	1    2800 6950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2350 7250 2800 7250
+Wire Wire Line
+	2800 7250 2800 7100
+Connection ~ 2350 7250
+Wire Wire Line
+	2800 6800 2800 6700
+Connection ~ 2800 6700
+Wire Wire Line
+	2800 6600 2800 6700
+Wire Wire Line
+	2800 6300 2800 6200
+Wire Wire Line
+	2800 6200 2350 6200
+Connection ~ 2350 6200
+Wire Wire Line
+	2800 6700 3350 6700
 $EndSCHEMATC
