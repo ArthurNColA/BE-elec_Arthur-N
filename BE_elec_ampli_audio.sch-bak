@@ -1078,37 +1078,11 @@ F 3 "" H 10300 5300 50  0001 C CNN
 	1    10300 5300
 	-1   0    0    1   
 $EndComp
-$Comp
-L power:GND #PWR0114
-U 1 1 6081D0C0
-P 10650 3450
-F 0 "#PWR0114" H 10650 3200 50  0001 C CNN
-F 1 "GND" H 10655 3277 50  0000 C CNN
-F 2 "" H 10650 3450 50  0001 C CNN
-F 3 "" H 10650 3450 50  0001 C CNN
-	1    10650 3450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J2
-U 1 1 6081D64B
-P 11000 2950
-F 0 "J2" H 10950 3050 50  0000 L CNN
-F 1 "Conn_01x02" H 10750 2750 50  0000 L CNN
-F 2 "CmpAmpliAudio:PhoenixContact_MSTBVA_2,5_2-G-5,08_1x02_P5.08mm_Vertical" H 11000 2950 50  0001 C CNN
-F 3 "~" H 11000 2950 50  0001 C CNN
-	1    11000 2950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	10100 2950 10800 2950
 Wire Wire Line
 	9500 2950 8650 2950
 Connection ~ 8650 2950
-Wire Wire Line
-	10800 3050 10650 3050
-Wire Wire Line
-	10650 3050 10650 3450
 Wire Wire Line
 	10300 3200 10300 3350
 Wire Wire Line
@@ -1155,7 +1129,7 @@ U 1 1 608BBD58
 P 9900 3200
 F 0 "U1" H 9800 3717 50  0000 C CNN
 F 1 "Relay_1CT" H 9800 3626 50  0000 C CNN
-F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 9250 2750 50  0001 L CNN
+F 2 "lib_be:Relay_be" H 9250 2750 50  0001 L CNN
 F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" V 9800 3250 50  0001 C CNN
 	1    9900 3200
 	1    0    0    -1  
@@ -1166,4 +1140,34 @@ Wire Wire Line
 Connection ~ 5800 3750
 Wire Wire Line
 	5800 3750 5800 4000
+$Comp
+L power:GND #PWR0114
+U 1 1 6081D0C0
+P 10650 2700
+F 0 "#PWR0114" H 10650 2450 50  0001 C CNN
+F 1 "GND" H 10655 2527 50  0000 C CNN
+F 2 "" H 10650 2700 50  0001 C CNN
+F 3 "" H 10650 2700 50  0001 C CNN
+	1    10650 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 6081D64B
+P 11000 2850
+F 0 "J2" H 10950 2950 50  0000 L CNN
+F 1 "Conn_01x02" H 10750 2650 50  0000 L CNN
+F 2 "CmpAmpliAudio:PhoenixContact_MSTBVA_2,5_2-G-5,08_1x02_P5.08mm_Vertical" H 11000 2850 50  0001 C CNN
+F 3 "~" H 11000 2850 50  0001 C CNN
+	1    11000 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10750 2850 10800 2850
+Wire Wire Line
+	10650 2700 10650 2650
+Wire Wire Line
+	10650 2650 10750 2650
+Wire Wire Line
+	10750 2650 10750 2850
 $EndSCHEMATC
